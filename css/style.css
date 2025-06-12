@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #005f99;
+  --gray-color: #6b7280;
+  --bg-light: #ffffff;
+  --text-color: #1f2937;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-light);
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h40v40H0z' fill='none'/%3E%3Cpath d='M0 0l40 40M40 0L0 40' stroke='%236b728040' stroke-width='1'/%3E%3C/svg%3E");
+  color: var(--text-color);
+  line-height: 1.6;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('../assets/images/portada.png') center 30%/cover no-repeat;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.hero-content {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.nav-hero {
+  position: fixed; top: 1rem; right: 1rem; z-index: 1000;
+  background: rgba(0, 0, 0, 0.5); padding: 0.5rem 1rem; border-radius: 8px;
+}
+.nav-hero ul { display: flex; gap: 1.5rem; list-style: none; }
+.nav-hero a { color: #fff; text-decoration: none; font-weight: 700; font-size: 1rem; transition: color 0.3s; }
+.nav-hero a:hover { color: var(--primary-color); }
+.container { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
+.section { margin: 2rem 0; background-color: var(--bg-light); padding: 2rem; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+.section h2 { font-size: 2rem; margin-bottom: 1rem; color: var(--primary-color); }
+ol, ul { margin-left: 1rem; }
+.contact-links { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 1rem; }
+.contact-links a { text-decoration: none; font-weight: 600; color: var(--gray-color); transition: color 0.3s; }
+.contact-links a:hover { color: var(--primary-color); }
