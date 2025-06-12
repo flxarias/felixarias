@@ -9,6 +9,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--bg-light);
@@ -33,6 +36,12 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
+}
+.hero-title {
+  font-size: 6rem;
+}
+.hero-subtitle {
+  font-size: 3rem;
 }
 .nav-hero {
   position: fixed; top: 1rem; right: 1rem; z-index: 1000;
