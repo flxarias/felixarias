@@ -1,0 +1,8 @@
+# Archivos temporales
+*.log
+*.tmp
+.DS_Store
+
+# Sistemas de paquetes
+node_modules/
+
